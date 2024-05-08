@@ -1,0 +1,38 @@
+ul {
+    list-style-type: none;
+}
+
+header {
+    margin-top: 34px;
+    font-family: "Poppins", sans-serif;
+
+    .header-line-1-container {
+        /* border: 1px solid red; */
+    
+        .left-side-container {
+            /* border: 1px solid blue; */
+    
+            ul {
+                max-width: 385px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                /* border: 1px solid orange; */
+                font-size: 12px;
+                font-weight: 400;
+                align-items: center;
+                padding: 0;
+                margin-left: 32px;
+    
+                img {
+                    height: 24px;
+                    margin-left: 10px;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+
+}
+
+
