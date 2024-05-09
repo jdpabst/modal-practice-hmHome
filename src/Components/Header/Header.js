@@ -53,7 +53,15 @@ function Header() {
 
                     <div className='main-contents-container'>
                         <ul className='main-contents'>
-                            <li></li>
+                            <li>Women</li>
+                            <li>Men</li>
+                            <li>Baby</li>
+                            <li>Kids</li>
+                            <li>H&M HOME</li>
+                            <li>Beauty</li>
+                            <li>Sport</li>
+                            <li>Sale</li>
+                            <li>Sustainability</li>
                         </ul>
                     </div>
 
@@ -64,11 +72,12 @@ function Header() {
 
                 </section>
 
-                <section>
-                    <div>
+                <section className='navigation-track-container'>
+                    <div className='navigation-track'>
                         <p>HM.com</p>
+                        <p> / </p>
                         {/* this is where logic would go to keep track of where the user is in the website */}
-                        <p>H&M HOME</p>
+                        <p className='current-page'>H&M HOME</p>
                     </div>
                 </section>
                 

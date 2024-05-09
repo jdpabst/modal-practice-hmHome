@@ -3,17 +3,23 @@ ul {
 }
 
 header {
-    margin-top: 34px;
+    /* margin-top: 34px; */
     font-family: "Poppins", sans-serif;
 
     .header-line-1-container {
         /* border: 1px solid red; */
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     
         .left-side-container {
             /* border: 1px solid blue; */
     
             ul {
-                max-width: 385px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -22,13 +28,138 @@ header {
                 font-weight: 400;
                 align-items: center;
                 padding: 0;
-                margin-left: 32px;
+                margin: 0;
+                /* margin-left: 32px; */
+
+                li{
+                    margin-right: 14px
+                }
     
                 img {
                     height: 24px;
                     margin-left: 10px;
                     margin-top: 4px;
                 }
+            }
+        }
+
+        .header-logo-container{
+            /* border: 1px solid blue; */
+            margin: 0;
+            padding: 0;
+            margin-right: 55px;
+            margin-top: 20px;
+
+            img {
+                height: 40px;
+            }
+        }
+
+        .right-side-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid orange; */
+            font-size: 12px;
+
+            .right-side {
+                margin: 0;
+                padding: 0;
+                margin-left: 12px;
+                font-weight: 400;
+                /* border: 1px solid blue; */
+                
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img {
+                        height: 24px;
+                        margin-right: 9px;
+                    }
+                }
+    
+                
+            }
+            
+        }
+    }
+
+    .header-line-2-container {
+        /* border: 1px solid fuchsia; */
+        padding-top: 28px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        position: relative;
+        margin-left: auto;
+        margin-right: 0;
+
+        .main-contents-container {
+
+
+            .main-contents {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                /* border: 1px solid salmon; */
+                font-size: 14px;
+                font-weight: 500;
+                width: 730px;
+                /* margin: 0 auto; */
+                padding: 0;
+
+                li {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+
+        .search-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 30px;
+            border-bottom: 1px solid #222222;
+
+            img {
+                height: 24px;
+                margin-right: 5px;
+            }
+
+            input {
+                border: none;
+                color: #222222;
+                font-weight: 500;
+            }
+        }
+
+    }
+
+    .navigation-track-container {
+        /* border: 1px solid brown; */
+
+        .navigation-track {
+            /* border: 1px solid blue; */
+            width: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 auto;
+
+            p {
+                font-size: 10px;
+                font-weight: 500;
+            }
+
+            .current-page {
+                font-size: 14px;
+                font-weight: 500;
+                color: #e50010;
             }
         }
     }
