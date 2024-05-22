@@ -83,57 +83,6 @@ function Header() {
                 
             </header>
 
-            <footer>
-
-                <section className='nested-company-info-lists-container'>
-                    <ul>
-                        <li>
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-
-                <section className='socials-container'>
-
-                    <ul>
-                        <li></li>
-                    </ul>
-
-                </section>
-
-                <section className='disclaimer-legals-container'>
-                    <p></p>
-                </section>
-
-                <img className='logo' />
-
-                <h1 className='currancy'></h1>
-
-            </footer>
-
         </div>
     )
 }
