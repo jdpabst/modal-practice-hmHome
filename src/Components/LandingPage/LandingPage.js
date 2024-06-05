@@ -84,9 +84,12 @@ function LandingPage () {
                 </div>
 
                 <div className='second-container cursor-pointer'>
-                    <h1>Shades of blue</h1>
-                    <button>Shop now</button>
-                    <div>
+                    <div className='title-cta-container-2'>
+                        <h1>Shades of blue</h1>
+                        <button>Shop now</button>
+                    </div>
+                    <img  className='black-tri' src='/assets/black-triangle.svg' />
+                    <div className='product-nav-box'>
                         <p>$6.99</p>
                         <p>Stoneware Side Plate</p>
                         <img src='/assets/right-arrow-2.svg' />
@@ -94,12 +97,18 @@ function LandingPage () {
                 </div>
 
                 <div className='third-container cursor-pointer'>
-                    <h1>Beach towels and bags</h1>
-                    <button>Shop now</button>
-                    <div>
-                        <p>$17.99</p>
-                        <p>Patterned Beach Towel</p>
-                        <img src='/assets/right-arrow-2.svg' />
+                    <div className='title-cta-container-3'>
+                        <h1>Beach towels and bags</h1>
+                        <button>Shop now</button>
+                    </div>
+                    
+                    <div className='product-nav-container'>
+                        <img className='black-tri' src='/assets/black-triangle.svg' />
+                        <div className='product-nav-box'>
+                            <p>$17.99</p>
+                            <p>Patterned Beach Towel</p>
+                            <img src='/assets/right-arrow-2.svg' />
+                        </div>
                     </div>
                 </div>
 
@@ -107,7 +116,7 @@ function LandingPage () {
                     <h1>Home décor</h1>
                     <p>Level up your interior aesthetics with our home décor range. Whether you've moved into a new home, or you want to breathe new life into your existing living space, our collection has every room in the house covered. Our furniture edit offers stunning side tables and comfy lounge chairs, plus there’s an array of chic lighting to create a calming ambience. Looking for those finishing touches? Check out our beautiful bed linen, and top it off by scrolling for decorative cushions and cushion covers, or create textured layers with blankets and throws. When it comes to decorations, add scented candles to your bathroom, give your favorite plants a place to call home in our chic plant pots, or experiment with wall hangings and elegant glassware. Whether your preferred style is minimalistic or bold, we've got something to suit every taste in our home décor range.</p>
             {/* toggle read more/read less here */}
-                    <p>Read less</p>
+                    <p className='toggle' >Read less</p>
                 </div>
 
             </section>
