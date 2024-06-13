@@ -27,11 +27,11 @@ function Header() {
                             <li>Customer Service</li>
                             <li>Students get 20% off</li>
                             <li>Find a store</li>
-                            <li className="drop-down-container" onClick={() => { setShowDropDown(true) }}>
+                            <li ref={menuDropdownRef} className="drop-down-container" onClick={() => { setShowDropDown(!showDropDown) }}>
                                 <img className='three-dots' src='./assets/three-dots.svg' />
 
                                 {showDropDown &&
-                                    <div ref={menuDropdownRef} className="drop-down">
+                                    <div className="drop-down">
                                         <ul>
                                             <li>Newsletter</li>
                                             <li>Download iOS</li>
