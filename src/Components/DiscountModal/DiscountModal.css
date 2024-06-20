@@ -1,0 +1,43 @@
+.discount-modal-container {
+ height: 195px;
+ width: 530px;
+
+ h1 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 25px;
+ }
+
+ p {
+  font-size: 12px;
+  width: 82%;
+  margin: 0 auto;
+  text-align: left;
+  word-spacing: 0.09em;
+  line-height: 15px;
+  margin-top: 35px;
+ }
+
+ .bttn {
+  width: 82%;
+  margin: 0 auto;
+  height: 50px;
+  border: none;
+  background-color: white;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+   font-size: 15px;
+   margin: 0;
+   padding: 0;
+  }
+ }
+
+ .bttn:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+ }
+}

@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import useClickAway from "../../hooks/UseClickAway";
 import "./Header.css";
 
+
 function Header() {
     // useRef is built into React, basically you assign it to a variable and use the variable to point the code to a specific piece. In this app, it is pointing to the dropdown menu div so that our useClickAway function knows what it's looking at. //
 
@@ -15,6 +16,8 @@ function Header() {
 
     });
 
+    // I need to move the discountmodal to the correct part of my code and get the popup working on that part (click the top 15%off banner to open the modal, close by clicking x or anywhere other than the modal)
+
     return (
         <div>
 
@@ -23,6 +26,7 @@ function Header() {
                 <section className='header-line-1-container'>
 
                     <div className='left-side-container'>
+
                         <ul className='left-side'>
                             <li>Customer Service</li>
                             <li>Students get 20% off</li>

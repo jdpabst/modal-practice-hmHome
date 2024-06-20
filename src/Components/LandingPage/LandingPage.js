@@ -1,6 +1,13 @@
+import { useState } from 'react';
+import DiscountModal from '../DiscountModal/DiscountModal';
 import './LandingPage.css';
 
-function LandingPage () {
+function LandingPage() {
+    const [popUp, setPopUp] = useState(false)
+
+    function handlePopUp() {
+        setPopUp(!popUp);
+    }
 
     return (
         <div className='landing-page-container'>
@@ -19,7 +26,7 @@ function LandingPage () {
                             <li> Home Décor under $9.99 </li>
                         </ul>
                     </li>
-                    <li className='list-header'> Offers & Deals 
+                    <li className='list-header'> Offers & Deals
                         <ul>
                             <li> Sale </li>
                             <li> Student Discount </li>
@@ -76,8 +83,11 @@ function LandingPage () {
             </section>
 
             <section className='right-column'>
-
-                <div className='first-container cursor-pointer'>
+                {popUp && (
+                    <DiscountModal discount={'15%'} paragraph={'Subscribe to H&M Fashion News and SMS to receive a 15% off your next purchase. After sign-up, your offer will be delivered to you via text message. Valid for new subscribers in the US only.'} setPopUp={setPopUp}>
+                    </DiscountModal>
+                )}
+                <div onClick={handlePopUp} className='first-container cursor-pointer'>
                     <h1>Get 15% off your order</h1>
                     <p> Sign up to receive emails and texts and be the first to know about latest drops and deals!</p>
                     <img src='/assets/info-icon.svg' />
@@ -88,7 +98,7 @@ function LandingPage () {
                         <h1>Shades of blue</h1>
                         <button>Shop now</button>
                     </div>
-                    <img  className='black-tri' src='/assets/black-triangle.svg' />
+                    <img className='black-tri' src='/assets/black-triangle.svg' />
                     <div className='product-nav-box'>
                         <p>$6.99</p>
                         <p>Stoneware Side Plate</p>
@@ -101,7 +111,7 @@ function LandingPage () {
                         <h1>Beach towels and bags</h1>
                         <button>Shop now</button>
                     </div>
-                    
+
                     <div className='product-nav-container'>
                         <img className='black-tri' src='/assets/black-triangle.svg' />
                         <div className='product-nav-box'>
@@ -115,7 +125,7 @@ function LandingPage () {
                 <div className='fourth-container'>
                     <h1>Home décor</h1>
                     <p>Level up your interior aesthetics with our home décor range. Whether you've moved into a new home, or you want to breathe new life into your existing living space, our collection has every room in the house covered. Our furniture edit offers stunning side tables and comfy lounge chairs, plus there’s an array of chic lighting to create a calming ambience. Looking for those finishing touches? Check out our beautiful bed linen, and top it off by scrolling for decorative cushions and cushion covers, or create textured layers with blankets and throws. When it comes to decorations, add scented candles to your bathroom, give your favorite plants a place to call home in our chic plant pots, or experiment with wall hangings and elegant glassware. Whether your preferred style is minimalistic or bold, we've got something to suit every taste in our home décor range.</p>
-            {/* toggle read more/read less here */}
+                    {/* toggle read more/read less here */}
                     <p className='toggle' >Read less</p>
                 </div>
 
