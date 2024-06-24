@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import useClickAway from "../../hooks/UseClickAway";
+import SignInModal from "../SignInModal/SignInModal";
 import "./Header.css";
 
 
@@ -8,6 +9,7 @@ function Header() {
 
     const menuDropdownRef = useRef(null);
     const [showDropDown, setShowDropDown] = useState(false);
+    const [popUp, setPopUp] = useState(false)
 
     // The useClickAway hook needs a ref and a cb funtion. We've assigned a ref to the correct div and our cb function is changing our state variable to toggle the div on and off. //
     useClickAway(menuDropdownRef, () => {
@@ -16,12 +18,20 @@ function Header() {
 
     });
 
-    // I need to move the discountmodal to the correct part of my code and get the popup working on that part (click the top 15%off banner to open the modal, close by clicking x or anywhere other than the modal)
+    function handlePopUp() {
+        setPopUp(!popUp);
+    }
 
     return (
         <div>
 
             <header>
+
+                {popUp && (
+                    <SignInModal setPopUp={setPopUp}>
+
+                    </SignInModal>
+                )}
 
                 <section className='header-line-1-container'>
 
@@ -54,7 +64,7 @@ function Header() {
 
                     <div className='right-side-container'>
                         <ul className='right-side'>
-                            <li>
+                            <li onClick={handlePopUp}>
                                 <img src='/assets/person-icon.svg' />
                                 <p>Sign in</p>
                             </li>
