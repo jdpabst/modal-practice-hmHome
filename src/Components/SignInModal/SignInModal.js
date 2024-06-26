@@ -6,29 +6,40 @@ function SignInModal({ setPopUp }) {
  return (
   <Modal setPopUp={setPopUp}>
    <div className='signin-modal-container'>
-    <h1>Sign in</h1>
-    <p>Become a Member — you'll enjoy exclusive deals, offers, invites and rewards.</p>
-    <section className='email-input-container'>
-     <p>Email *</p>
-     <input />
-    </section>
-    <section className='password-input-container'>
-     <p>Password *</p>
-     <input />
-     <h1>SHOW</h1>
-    </section>
-    <section>
-     <div>
+
+    <div className='inner-signin-container'>
+
+     <h1>Sign in</h1>
+
+     <p>Become a Member — you'll enjoy exclusive deals, offers, invites and rewards.</p>
+
+     <section className='sign-in-input email-input-container'>
+      <p>Email *</p>
       <input />
-      <p>Remember me</p>
-     </div>
-     <p>Forgot password?</p>
-    </section>
-    <section>
-     <button>Sign in</button>
-     <button>Become a member</button>
-    </section>
-    <p>H&M Membership</p>
+     </section>
+
+     <section className='sign-in-input password-input-container'>
+      <p>Password *</p>
+      <input />
+      <h1 className='pass-show cursor-hover'>SHOW</h1>
+     </section>
+
+     <section className='signin-helps-container'>
+      <div className='checkbox-container'>
+       <input type='checkbox' />
+       <p>Remember me</p>
+      </div>
+      <p className='custom-p-styling-forgotpass cursor-hover'>Forgot password?</p>
+     </section>
+
+     <section className='button-container'>
+      <button className='signin-bttn'>Sign in</button>
+      <button className='member-bttn'>Become a member</button>
+     </section>
+
+     <p className='membership-signin cursor-hover'>H&M Membership</p>
+
+    </div>
    </div>
   </Modal>
  )
